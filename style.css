@@ -1,0 +1,721 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 100px;
+}
+
+
+.banner {
+    position: relative;
+    min-height: 100vh;
+    background: url(./assets/images/Background-removebg1.png);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content:space-between ;
+    align-items: flex-end;
+   
+}
+
+.banner .textBx img {
+    width: 400px;
+}
+
+.banner h2 {
+    font-size: 1.5em;
+    color: #0D336B;
+    font-weight: 500;
+    line-height: 1.7em;
+}
+
+.banner h2 span {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.banner h3 {
+    font-size: 1.5em;
+    color: rgb(232, 175, 204);
+    font-weight: 400;  
+}
+
+.btn1 {
+    position: relative;
+    background: #1296f3;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+    border-radius: 7%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 250px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    
+}
+
+header.sticky {  /* esse faz o efeito do header ficar branco  */
+  /*  background: linear-gradient(45deg, #ff216d, #2196f3, #ff216d,#2196f3); 
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);*/
+  background-image: linear-gradient(to left, #084197, #12e22b, #009ecd, #00c494, #12e22b);
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+header .logo {
+    color: rgb(170, 13, 102);
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+header.sticky .logo {/* esse faz o efeito de ficar escuras as letras quado o header ficar branco  */
+    color: #111;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+   
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: rgb(170, 13, 102);
+    text-decoration:  none;
+}
+
+
+header.sticky ul li a{
+    color: #111;
+}
+
+.about  {
+  /*  background: linear-gradient(45deg, #ff216d, #2196f3, #ff216d,#2196f3); 
+    background: rgb(244, 212, 228);   
+     background-image: linear-gradient(to left, #084197, #0072cd, #009ecd, #00c494, #12e22b); */
+     background-image: linear-gradient(to left, #084197, #12e22b, #009ecd, #00c494, #12e22b);
+ 
+}  
+.heading1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #111;   
+}
+
+#heading1  {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #fff;  
+}
+#text {
+    color: #111;
+}
+
+.heading1 h2 {
+    font-weight: 600;
+    font-size: 30px;       
+}
+
+.heading1 p {
+   text-align: justify;      
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+ 
+ 
+}
+
+.contentBx {
+    padding-right: 30px;
+}
+
+.contentBx h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.w50 {
+    min-width: 50%;
+}
+
+img {
+    max-width: 100%;  
+}
+
+.services {
+    /* background: #111;
+   background: linear-gradient(45deg, #ff216d, #2196f3, #ff216d,#2196f3); 
+   background: rgb(244, 212, 228);    */
+   background-image: linear-gradient(to left, #084197, #12e22b, #009ecd, #00c494, #12e22b);
+}
+
+.heading1.white {
+    color: #111
+}
+
+.servicesBx img {
+    border-radius: 10%;
+}
+
+.services .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.services .content .servicesBx {
+    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.services .content .servicesBx:hover {
+    background: #1296f3;
+}
+
+/*
+.services .content .servicesBx img { 
+    max-width: 200px;
+    filter: invert(1);
+} // caso queira color icones preto e branco no lugar das imagens, se a tela estiver preta ele fica branco */
+
+.services .content .servicesBx h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.work {
+  /*  background: linear-gradient(45deg, #ff216d, #2196f3, #ff216d,#2196f3); 
+  background: rgb(244, 212, 228);*/
+  background: #111;
+}
+.work .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.work .content .workBx {
+    width:350px;
+    padding: 20px;
+    position: relative;
+    background: rgb(52, 50, 50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 30px;
+    transition: 0.5s;  
+}
+
+.work .content .workBx:hover {
+    transform: translateY(-20px);
+}
+
+.work .content .workBx::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ffbc00, #ff0058);
+}
+
+.work .content .workBx::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ffbc00, #ff0058);
+    filter: blur(30px);
+}
+
+.work .content .workBx:nth-child(2)::before,
+.work .content .workBx:nth-child(2)::after {
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+} 
+
+.work .content .workBx:nth-child(3)::before,
+.work .content .workBx:nth-child(3)::after {
+    background: linear-gradient(315deg, #07f403, #ff0058);
+}
+
+.work .content .workBx:nth-child(4)::before,
+.work .content .workBx:nth-child(4)::after {
+    background: linear-gradient(315deg, #8c03f4, #00d0ff);
+}
+
+.work .content span {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.work .content .workBx span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255,255,0.1);
+    pointer-events: none;
+}
+
+.work .content .workBx img {
+    max-width: 100%;
+    z-index: 10;
+}
+
+.testimonial {
+     /*  background: linear-gradient(45deg, #ff216d, #2196f3, #ff216d,#2196f3);
+     background: rgb(244, 212, 228);
+     background: linear-gradient(265deg,#2196f3, #ff216d, #03a9f4,#ff0058); */
+     background-image: linear-gradient(to left, #084197, #0072cd, #009ecd, #00c494, #12e22b);
+}
+
+
+.testimonial .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.testimonial .content .testimonialBx {
+    max-width: calc(50% - 40px);
+    padding: 60px 40px;
+    margin: 20px;
+    background: #1296f3;
+}
+
+.testimonial .content .testimonialBx p {
+    color: #fff;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.testimonial .content .testimonialBx h3 {
+    margin-top: 40px;
+    text-align: end;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1em;
+}
+
+.testimonial .content .testimonialBx h3 span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.contact {
+    background: #111;
+}
+
+.formBx {
+    min-width: 60%;
+}
+
+.formBx form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formBx form h3, .contactInfo h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.formBx form input, .formBx form textarea {
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: #222;
+    color: #fff;
+    resize: none; /* esse retira o ajuste do campo "escrevaa mensagem"  e deixa em um tamaho fixo */  
+} 
+
+.formBx form textarea {
+    min-height: 150px;
+}
+
+.formBx form input::placeholder, 
+.formBx form textarea::placeholder {
+    color: #999; /* muda a cor do texto dentro do formulario */ 
+}
+
+.formBx form input[type="submit"] {
+    max-width: 100px;
+    background: #1296f3;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}/* tamanho e estilo do botão */ 
+
+
+.contactInfo {
+    min-width: 40%;
+}
+
+.contactInfoBx {
+    position: relative;
+}
+
+.contactInfoBx .box {
+    position: relative;
+    padding: 20px 0px;
+    display: flex;
+}
+
+.contactInfoBx .box .icon {
+    min-width: 50px;
+    padding-top: 4px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 24px;
+
+}
+
+.contactInfoBx .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contactInfoBx .box .text a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.contactInfoBx .box .text h3 {
+    font-weight: 500;
+    color: #1296f3;
+    margin-bottom: 0;
+}
+
+
+.copyright {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+}
+
+
+/*
+.gallery1 {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* 8 colunas cada uma com 1 fração-1fr 
+    grid-template-rows: repeat(7, 4vw); /* 8 linhas com 5% da largura do viewport 5vw 
+    gap: 0.5rem; /*espaço da grade
+    margin-top: 0px;
+  
+  }
+  
+  .imgGaleria {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* abranger todo o espaço
+    display: block; /* tudo ficar em sequencia *
+  }
+  
+  .GaleriaItem {
+  overflow: hidden; /* para que as imagens não ultrapassem o limite *
+  
+  }
+  
+  .item01 {
+    grid-column: 1 / span 2; /* partira da primeira 1 coluna e tera largura de 2 colunas*
+    grid-row: 1 / span 3; /* partira da primeira 1 linha e tera altura de 3 linhas *
+  }
+  
+  .item02 {
+    grid-column: 3 / span 2;  /* partira da primeira 3 coluna e tera largura de 2 colunas*
+    grid-row: 1 / span 3; /* partira da primeira 1 linha e tera altura de 3 linhas *
+  }
+  
+  .item03 {
+    grid-column: 5 / span 2; /* partira da primeira 5 coluna e tera largura de 2 colunas*
+    grid-row: 1 / span 3; /* partira da primeira 1 linha e tera altura de 3 linhas *
+  }
+  
+  .item04 {
+    grid-column: 7 / span 2; /* partira da primeira 7 coluna e tera largura de 2 colunas*
+    grid-row: 1 / span 3; /* partira da primeira 1 linha e tera altura de 3 linhas *
+  }
+  
+  .item05 {
+    grid-column: 1 / span 2; /* partira da primeira 1 coluna e tera largura de 2 colunas*
+    grid-row: 4 / span 3; /* partira da primeira 4 linha e tera altura de 3 linhas *
+  }
+  
+  .item06 {
+    grid-column: 3/ span 2; 
+    grid-row: 4 / span 3; /* partira da primeira 4 linha e tera altura de 3 linhas *
+  }
+  
+  .item07 {
+    grid-column: 5/ span 2;
+    grid-row: 4 / span 3; /* partira da primeira 1 linha e terá altura de 3 linhas *
+  }
+  
+  .item08 {
+    grid-column: 7/ span 2; 
+    grid-row: 4 / span 3; /* partira da primeira 1 linha e terá altura de 3 linhas *
+  }
+
+  .item09 {
+    grid-column: 1/ span 2; 
+    grid-row: 7 / span 3; /* partira da primeira 1 linha e terá altura de 3 linhas *
+  }
+
+  .item10 {
+    grid-column: 3/ span 2; 
+    grid-row: 7 / span 3; /* partira da primeira 1 linha e terá altura de 3 linhas *
+  }
+
+  .item11 {
+    grid-column: 5/ span 2; 
+    grid-row: 7 / span 3; /* partira da primeira 1 linha e terá altura de 3 linhas *
+  }
+
+  .item12 {
+    grid-column: 7/ span 2; 
+    grid-row: 7 / span 3; /* partira da primeira 1 linha e terá altura de 3 linhas *
+  } *
+  
+  img {
+    transition: 0.5s; /*tempo do efeito de levantar a imagem *
+  }
+  
+  img:hover {
+    transform: scale(1.2);  /* escala1.2 ( aumenta 20%) *
+  }
+
+
+/* para ficar responsivo */
+
+@media (max-width: 991px) {
+    header, header.sticky
+    {
+        padding: 20px 50px;
+        z-index: 1000;
+    }
+
+   
+    .container .slider-box{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .img iframe{
+        max-width:370px;
+        max-height: 250px;
+        margin: auto; 
+    }
+
+    .img {
+        margin-bottom: 20px;
+        max-width: calc(100% - 20px);
+        padding: 10px;
+    } 
+
+    .menu 
+    {
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        transition: 0.5s;
+        z-index: 999;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+     
+    }
+
+    .menu.active
+    {
+        left: 0;
+    }
+
+    header ul li a 
+    {
+        color: #111;
+        font-size: 24px;
+        margin: 10px;
+    }
+
+    .toggle 
+    {
+        width: 40px;
+        height: 40px;
+        background: url(./assets/images/icons/menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+
+    .toggle.active  
+    {
+        background: url(./assets/images/icons/close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        cursor: pointer;
+    } 
+
+    header.sticky .toggle 
+    {
+        filter: invert(1);
+    }
+
+    section 
+    {
+        padding: 60px 50px; /* era 100px 50px */
+    }
+
+    .banner 
+    {
+        padding: 150px 50px 100px;
+    }
+
+    .banner h2
+    {
+        font-size: 1.5em;
+    }
+
+    .banner h3
+    {
+        font-size: 1em;
+    }
+
+    .btn1 
+    {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+ 
+    .heading1 h2 
+    {
+        font-size: 24px;
+    }
+
+    .contentBx h3 {
+        font-size: 20px;
+    }
+
+    .content 
+    {
+        flex-direction: column;
+    }
+
+    .w50 
+    {
+        margin-bottom: 20px;
+    }
+
+    .services .content .servicesBx
+    {
+        margin: 10px;
+    }
+
+    .work .content .workBx 
+    {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .testimonial .content .testimonialBx
+     {
+        max-width: calc(100% - 20px);
+        padding: 40px 20px;
+        margin: 10px;
+        background: #1296f3;
+     }
+
+     .testimonial .content .testimonialBx h3
+     {
+        margin-top: 20px;
+     }
+
+     .contactInfo 
+     {
+        margin: 20px 0;
+     }
+}   
+
+@media (max-width: 600px) {
+    header, header.sticky
+    {
+        padding: 20px 20px;
+    }
+
+    
+}    
